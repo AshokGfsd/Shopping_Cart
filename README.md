@@ -1,12 +1,12 @@
-# _Day 23 Task_
-### _**React Shopping Cart Task**_
+# _Day 25 Task_
+### _**Todo Task**_
 
-- [_**React Shopping Cart Task Deploy**_](https://shopping-cart-beta-one.vercel.app/)
+- [_**Todo Task Deploy**_](https://my-todo-lovat-five.vercel.app/)
 
-- [_**React Shopping Cart Task Folder**_](./)
+- [_**Todo Task Folder**_](./)
 
-- [_**React Shopping Cart Task HTML**_](./index.html)
+- [_**Todo Task HTML**_](./index.html)
 
-- [_**React Shopping Cart Task  Main JSX**_](./src/main.jsx)
+- [_**Todo Task  Main JSX**_](./src/main.jsx)
 
-- [_**React Shopping Cart Task  App JSX**_](./src/App.jsx)
+- [_**Todo Task  App JSX**_](./src/App.jsx)

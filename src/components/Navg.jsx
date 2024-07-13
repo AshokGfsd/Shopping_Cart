@@ -1,5 +1,5 @@
-import Product from "./Product";
-const Navg = (data) => {
+
+const Navg = ({count}) => {
   
   return (
     <>
@@ -69,7 +69,7 @@ const Navg = (data) => {
                 <i className="bi-cart-fill me-1"></i>
                 Cart
                 <span className="badge bg-dark text-white ms-1 rounded-pill">
-                {data.numm}
+                {count}
                 </span>
               </button>
             </form>

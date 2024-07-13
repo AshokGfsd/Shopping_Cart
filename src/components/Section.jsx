@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Product from "./Product";
+
 const Section = ({ onChange }) => {
-  const [TotalVal, setTotal] = useState([]);
+  
+  const [count, setCount] = useState(0);
+
   const Total = (val) => {
     if (val == 1) {
-      setTotal([...TotalVal, val]);
+      setCount(count + 1);
     } else {
-      TotalVal.pop();
-      onChange([TotalVal.length]);
+      setCount(count - 1);
     }
   };
+
   useEffect(() => {
-    onChange([TotalVal.length]);
-  }, [TotalVal]);
+
+    onChange(count);
+
+  }, [count]);
+
   return (
     <>
       <section className="py-5">

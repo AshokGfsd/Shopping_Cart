@@ -1,20 +1,24 @@
 import Navg from "./components/Navg";
 import Head from "./components/Head";
 import Section from "./components/Section";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 
 const App = () => {
-  let [cNum, setcNum] = useState(0);
-  const Cnum = (val) => {
-    setcNum(val);
+  let [count, setCount] = useState();
+
+  useEffect(() => {
+    setCount(0);
+  }, []);
+  const get = (val) => {
+    setCount(val);
   };
   return (
     <div>
-      <Navg numm={cNum} />
+      <Navg count={count} />
       <Head />
-      <Section onChange={Cnum} />
+      <Section onChange={get} />
       <Footer />
     </div>
   );
